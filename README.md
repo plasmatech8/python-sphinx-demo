@@ -34,6 +34,30 @@ i.e.
 	mypackage contains all code that we want to document.
 5. make html
 
+Creating a github-pages branch for hosting the documentation:
+1. Go outside your entire project.
+2. mkdir Python-Sphinx-Demo-docs
+3. cd Python-Sphinx-Demo-docs
+4. git clone https://github.com/[user]/[repository].git html
+	
+	(git clone https://github.com/plasmatech8/Python-Sphinx-Demo.git html)
+	
+5. cd html
+6. git branch gh-pages
+7. git symbolic-ref HEAD refs/heads/gh-pages
+8. rm .git/index
+9. git clean -fdx
+10. git branch #to check  to make sure we are in the gh-pages branch
+11. copy the build html files to the html folder (make html)
+12. git add .
+13. git commit -m "Rebuilt docs"
+14. git push origin gh-pages
+15. Go to https://[user].github.io/[repository]/
+
+	(Go to https://plasmatech8.github.io/Python-Sphinx-Demo/)
+	(old: https://github.com/pages/plasmatech8/Python-Sphinx-Demo/)
+
+https://github.com/pages/plasmatech8/[repository]/
 
 # Quickstart Command
 

@@ -7,8 +7,15 @@ I can make some awesome looking html using the multiline comments in python!!!
 
 The Class
 ~~~~~~~~~
-"""
 
+Ummm... idk
+
+Other information
+^^^^^^^^^^^^^^^^^
+
+Note: idk what to write here, lol.
+
+"""
 
 class Dog():
 	"""
@@ -47,11 +54,12 @@ class Dog():
 			return "Woof"
 		else:
 			return "Bork"
-			
-			
+
+
 """
 Other information
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
-Note: idk what to write here, lol.
+I can't write stuff here so I am sad.
+
 """
