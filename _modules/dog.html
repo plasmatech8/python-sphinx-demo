@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>dog &#8212; Python-Sphinx-Demo 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python-Sphinx-Demo 0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for dog</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is dog.py. Heck yeah.</span>
+
+<span class="sd">It contains a dog class. Heck yeah.</span>
+
+<span class="sd">I can make some awesome looking html using the multiline comments in python!!!</span>
+
+<span class="sd">The Class</span>
+<span class="sd">~~~~~~~~~</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="Dog"><a class="viewcode-back" href="../dog.html#dog.Dog">[docs]</a><span class="k">class</span> <span class="nc">Dog</span><span class="p">():</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	This is a dog.</span>
+<span class="sd">	</span>
+<span class="sd">	Woo, its a damn dog!</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
+		<span class="sd">&quot;&quot;&quot;Init a dog</span>
+
+<span class="sd">		:param name: The name of the dog. </span>
+<span class="sd">		:type name: str. </span>
+<span class="sd">		:param size: The size of the dog. </span>
+<span class="sd">		:type size: int. </span>
+<span class="sd">		:returns: Dog</span>
+
+<span class="sd">		&quot;&quot;&quot;</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span>
+		
+<div class="viewcode-block" id="Dog.bark"><a class="viewcode-back" href="../dog.html#dog.Dog.bark">[docs]</a>	<span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sleepy</span><span class="p">):</span>
+		<span class="sd">&quot;&quot;&quot;Makes a dog noise.</span>
+
+<span class="sd">		:param name: The name of the dog. </span>
+<span class="sd">		:type name: str. </span>
+<span class="sd">		:param size: The size of the dog. </span>
+<span class="sd">		:type size: int. </span>
+<span class="sd">		:returns: Dog</span>
+<span class="sd">		:param sleepy: If the dog is sleepy. </span>
+<span class="sd">		:type sleepy: bool. </span>
+<span class="sd">		:returns: str</span>
+
+<span class="sd">		&quot;&quot;&quot;</span> 
+		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">sleepy</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+			<span class="k">return</span> <span class="s2">&quot;Woof&quot;</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="k">return</span> <span class="s2">&quot;Bork&quot;</span></div></div>
+			
+			
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Other information</span>
+<span class="sd">~~~~~~~~~~~~~~~~~</span>
+
+<span class="sd">Note: idk what to write here, lol.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python-Sphinx-Demo 0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Mark Connelly.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>
