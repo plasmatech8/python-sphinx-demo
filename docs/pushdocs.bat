@@ -16,15 +16,28 @@ REM git reset --mixed HEAD~1
 
 REM rm -rf docs/build/html/
 
+REM cd build/html/
+REM git add --all
+REM git commit -m "Updated gh-pages branch."
+REM git push origin gh-pages --force
+REM git reset HEAD~1
+REM cd ../../
 
-cd build/html/
-git add --all
-git commit -m "Updated gh-pages branch."
-git push origin gh-pages --force
-git reset HEAD~1
-cd ../../
+REM cd ..
+REM git checkout master
+REM git subtree split --prefix docs/build/html/ -b gh-pages
+REM git subtree push --prefix docs/build/html/ origin gh-pages
+REM :: git push -f origin gh-pages:gh-pages
+REM :: git branch -D gh-pages
+REM cd docs
 
+:: Unstages all files, Stages gh-pages files, makes a commit, pushes subtree to the gh-pages branch
+git reset
+git add build/html/
+git commit -m "Updated gh-pages documentation."
+cd ../
+git subtree push --prefix docs/build/html/ origin gh-pages
+git push origin
+cd docs
 
-:: Finishing Message
-:: echo The changes under docs/build/html should have been pushed to the gh-pages branch.
 pause
