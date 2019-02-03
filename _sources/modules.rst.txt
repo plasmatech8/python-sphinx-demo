@@ -6,3 +6,4 @@
 
    cat
    dog
+   mouse
