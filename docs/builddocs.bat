@@ -1,10 +1,10 @@
 @echo off
 
-cd ../
-rm -rf "docs/build/html/"
-echo "docs/build/html/" >> .gitignore
-git worktree add docs/build/html/ gh-pages
-cd docs/
+REM cd ../
+REM rm -rf "docs/build/html/"
+REM echo "docs/build/html/" >> .gitignore
+REM git worktree add docs/build/html/ gh-pages
+REM cd docs/
 
 :: Builds .html from .rst files and settings from docs/source/.
 make html
