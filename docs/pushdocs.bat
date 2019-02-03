@@ -31,10 +31,12 @@ REM :: git push -f origin gh-pages:gh-pages
 REM :: git branch -D gh-pages
 REM cd docs
 
-:: Unstages all files, Stages gh-pages files, makes a commit, pushes subtree to the gh-pages branch
+:: Unstages all files, Stages gh-pages files, makes a commit.
 git reset
 git add build/html/
 git commit -m "Updated gh-pages documentation."
+
+:: Pushes subtree to the gh-pages branch
 cd ../
 git subtree push --prefix docs/build/html/ origin gh-pages
 cd docs
