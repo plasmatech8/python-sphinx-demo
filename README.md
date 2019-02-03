@@ -1,6 +1,8 @@
 # Python-Sphinx-Demo
 A demonstration on how to automatically create documentation.
 
+Link to gh-pages: https://plasmatech8.github.io/Python-Sphinx-Demo/
+
 Getting started:
 1. mkdir docs
 2. cd docs
