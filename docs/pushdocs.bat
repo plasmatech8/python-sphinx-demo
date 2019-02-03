@@ -37,7 +37,6 @@ git add build/html/
 git commit -m "Updated gh-pages documentation."
 cd ../
 git subtree push --prefix docs/build/html/ origin gh-pages
-git push origin
 cd docs
 
 pause
