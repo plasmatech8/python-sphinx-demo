@@ -6,20 +6,17 @@
 set "htmlDir=%cd%\build\html"
 set "docsDir=%cd%"
 set /p url="Enter repo URL: "
+cd ../
+for %%I in (.) do set "projName=%%~nxI"
 
 :: Go outside of project folder
-cd ../../
-
-:: Create a new folder outside of the current project
-set  counter=0
-:TryNext
-set /a counter+=1
-mkdir "%projName%-docs (%counter%)" 2>nul || goto :TryNext
+cd ../
 
 :: Folder name, gh-pages directory
-set "dir=%projName%-docs (%counter%)"
+set "dir=%projName%-docs"
 
 :: Clone the gh-pages branch of the repo
+rd "%dir%" /s /q
 git clone -b gh-pages "%url%" "%dir%"
 cd "%dir%"
 
