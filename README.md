@@ -3,6 +3,33 @@ A demonstration on how to automatically create documentation.
 
 Link to gh-pages: https://plasmatech8.github.io/Python-Sphinx-Demo/
 
+## Good Easy-to-Use Way 
+
+To set up your documentation you should:
+1. Copy and paste the docs folder into your project.
+2. Run initdocs.bat to set up .rst files for your python files in mypackage.
+3. Edit your .rst files to create appropriate webpages in docs/source/
+4. Run builddocs.bat to generate .html files.
+
+5. Publish to github pages:
+
+To publish to gh-pages you can either use the gh-pages branch (which is set by default), or you can use the docs/ folder as your gh-pages html folder. Where gh-pages looks to find your .html files depends on the github pages settings of your github repo.
+
+It is recommended to use method 2a.
+
+1. Publish to the gh-pages branch
+		
+	a. Use **pushdocs.bat**. This will use git subtree push to find your files under docs/build/html/ and push it to the gh-pages branch. This method is slow because it must iterate over every commit in the gh-pages branch before pushing the contents.
+	
+	b. Use **pushdocs2.bat**. This will clone the gh-pages branch into a new folder (outside of the main project folder) and copy all files from docs/build/html/ into it. It will then add, commit and push it to the remote gh-pages branch. This folder is named '<YOUR PROJECT>-docs (1)' and a new folder is created and the number is incremented for each time pushdocs2 is executed. 
+	
+	c. Use **pushdocs3.bat**. This will do the same as pushdocs2 except it will delete the folder named '<YOUR PROJECT>-docs' before cloning the branch. This method avoids creating duplicates.
+2. Set gh-pages settings to use the docs/ folder and redirect the user to the documentation. (RECOMMENDED)
+	
+	a. Go into your github project settings>GitHub Pages>Source. You will be able to change the setting from **gh-pages branch** to **master branch /docs folder**. In your docs/ folder, you must then make sure that a .nojekyll file exists and a .html file exists which redirects the user to the location of the documentation (docs/build/html/index.html).
+
+## Manual Instructions
+
 Getting started:
 1. mkdir docs
 2. cd docs
